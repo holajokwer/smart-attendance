@@ -1,5 +1,4 @@
 import { User, Class, Session, AttendanceRecord } from '@/types';
-import { v4 as uuid } from 'crypto';
 
 function genId() {
   return Math.random().toString(36).substring(2, 15);
