@@ -23,7 +23,7 @@ export default function LandingPage() {
     <div className="min-h-screen" style={{ background: 'linear-gradient(180deg, #F8FAFC 0%, #EEF2FF 50%, #F8FAFC 100%)' }}>
       {/* Navbar */}
       <nav className="glass sticky top-0 z-50 border-b border-slate-200">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div style={{ background: 'linear-gradient(135deg, #4F46E5, #818CF8)', borderRadius: '12px', padding: '8px' }}>
               <QrCode className="text-white" size={22} />
@@ -41,14 +41,14 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-14 sm:pt-20 pb-12 sm:pb-16 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8 animate-fade-in"
           style={{ background: '#EEF2FF', border: '1px solid #C7D2FE' }}>
           <Zap size={14} className="text-indigo-500" />
           <span className="text-sm font-semibold text-indigo-700">BCA Final Year Project · Demo Ready</span>
         </div>
 
-        <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 animate-fade-in delay-100">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 animate-fade-in delay-100">
           Smarter Attendance.<br />
           <span className="gradient-text">Zero Paperwork.</span>
         </h1>
@@ -57,22 +57,22 @@ export default function LandingPage() {
           The modern QR-based attendance system for colleges. Generate a QR code, students scan it, attendance is done — instantly.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in delay-300">
-          <Link href="/login" className="btn btn-primary btn-lg">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in delay-300 w-full sm:w-auto">
+          <Link href="/login" className="btn btn-primary btn-lg w-full sm:w-auto" style={{ justifyContent: 'center' }}>
             Start Demo <ArrowRight size={18} />
           </Link>
-          <a href="#how-it-works" className="btn btn-secondary btn-lg">
+          <a href="#how-it-works" className="btn btn-secondary btn-lg w-full sm:w-auto" style={{ justifyContent: 'center' }}>
             See How It Works
           </a>
         </div>
 
         {/* Hero Visual */}
-        <div className="mt-16 animate-fade-in delay-400 relative">
+        <div className="mt-12 sm:mt-16 animate-fade-in delay-400 relative overflow-hidden">
           <div className="absolute inset-0 blur-3xl opacity-20 rounded-3xl"
             style={{ background: 'linear-gradient(135deg, #4F46E5, #818CF8)' }}></div>
-          <div className="relative card p-6 max-w-4xl mx-auto"
+          <div className="relative card p-4 sm:p-6 max-w-4xl mx-auto overflow-hidden"
             style={{ boxShadow: '0 20px 60px rgba(79, 70, 229, 0.15)' }}>
-            <div className="grid md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
               {/* Teacher Panel */}
               <div className="stat-indigo rounded-xl p-5 text-left">
                 <div className="flex items-center gap-2 mb-3">

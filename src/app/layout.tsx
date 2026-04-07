@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
 
@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   title: "Smart Attendance System",
   description: "QR-based smart attendance management system for modern educational institutions. Powered by real-time QR codes.",
   keywords: "attendance, QR code, smart attendance, student management, teacher portal",
+  manifest: "/manifest.json",
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: '#4F46E5',
 };
 
 export default function RootLayout({
